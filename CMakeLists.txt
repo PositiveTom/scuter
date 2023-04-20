@@ -9,6 +9,11 @@ include_directories(include)
 #   创建库
 add_library(tire src/cmu15445/tire/tire.cc)
 
-#   创建可执行文件，并链接库
+# add_library()
+
+#   创建可执行文件，并链接希望链接的库
 add_executable(test_tire example/test_tire.cpp)
 target_link_libraries(test_tire tire)
+
+
+add_executable(test_huawei example/test_huawei.cpp)
